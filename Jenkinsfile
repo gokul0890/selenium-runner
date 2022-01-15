@@ -1,5 +1,5 @@
 pipeline {
-    agent Docker1
+    agent {Docker1}
     stages {
         stage('docker up') {
             steps {
