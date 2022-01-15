@@ -1,14 +1,14 @@
 pipeline {
-    agent any
+    agent Docker1
     stages {
         stage('docker up') {
             steps {
-		sh 'docker-compose up'
+		bat 'docker-compose up'
             }
         }
         stage('docker down') {
             steps{
-		sh 'docker-compse down'
+		bat 'docker-compose down'
             }
         }
     }
